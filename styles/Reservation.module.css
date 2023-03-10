@@ -1,0 +1,56 @@
+
+.reservations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:90%;
+    
+}
+
+.reservations p,.reservations h1 {
+    width: 70%;
+    line-height: 1.5;
+    padding-left: 2rem;
+}
+
+.reservations h1 {
+    width: 70%;
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+.reservations button {
+    display: block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+@media screen and (max-width:960px) {
+    .reservations {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .reservations p,.reservations h1 {
+        width: 98%;
+        margin:1rem auto;
+        line-height: 1.5;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .reservations button {
+        display: block;
+        margin:2rem auto;
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .reservations h1 {
+        width: 95%;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+}

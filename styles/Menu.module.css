@@ -1,0 +1,124 @@
+.menu__content {
+    padding:10px 15px;
+}
+
+.menu__header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu__header h1 {
+    font-size: 2.5rem;
+}
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+   scroll-behavior: smooth; 
+   scroll-snap-type: x mandatory;
+
+}
+
+.menu__list li {
+    margin: 0 10px;
+    
+    border:2px solid var(--btn-color);
+    padding: 0.7rem 1rem;
+    border-radius: 1.2rem;
+    width: 300px;
+    cursor: pointer;
+    list-style: none;
+    text-transform: capitalize;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu__list li:first-child,.menu__list li:hover {
+    background-color: var(--btn-color);
+}
+.menu__list::-webkit-scrollbar {
+    display: none;
+}
+
+.food__wrapper  { 
+    display: grid;
+    gap:18px;
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+
+}
+
+.food__details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    width: 310px;
+}
+
+.menuImg__container {
+   
+    width: 250px;
+    height: 250px;
+    margin: 1rem;
+    border-radius: 0.7rem;
+}
+.menu__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ width: 100%;
+ height: 100%;   
+ object-fit: cover;
+ border-radius:1rem;
+ 
+ 
+}
+
+
+
+.cart__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    
+}
+
+@media screen and (max-width:960px) {
+    .menu__list {
+        justify-content: start;
+        margin-left: -3rem;
+        
+    }
+
+    .menu__header h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .menu__list {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow-x: scroll;
+        scroll-snap-align: start;
+        scroll-snap-type: x mandatory;
+        
+    }
+
+    .menu__header h1 {
+        font-size: 1.2rem;
+    }
+
+    .menu__header button {
+        font-size: 0.8rem;
+        height: 37px;
+    }
+}
+

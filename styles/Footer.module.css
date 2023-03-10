@@ -1,0 +1,114 @@
+.footer__text,.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.logo__content {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.logo__content h1 {
+    font-size: 1.5rem;
+    margin-left: -2rem;
+}
+.img__container {
+    background-color: var(--btn-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0.5rem;
+    
+}
+
+.logo {
+    height: 70px;
+    object-fit: contain;
+}
+.subscribe {
+display: block;
+text-align: center;
+}
+.subscribe input {
+    border:none;
+    border-bottom: 1px solid var(--color);
+    width: 350px;
+    outline: none;
+    background-color: var(--background);
+}
+
+.arrow{
+    font-size: 1.3rem;
+    background-color: var(--btn-color);
+    border-radius: 50%;
+    transition: all 0.5s;
+    color: var(--color);
+    padding: 0.3rem;
+    cursor: pointer;
+    color:var(--primary);
+}
+
+.subscribe .socials {
+margin: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.subscribe .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.subscribe .socials a:hover {
+    background-color: var(--btn-color);
+    border:2px solid var(--btn-color);
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width:960px){
+    .footer__text{
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .footer__content {
+        display: block;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .footer__text{
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .footer__content {
+        display: block;
+    }
+
+    .subscribe input {
+        border:none;
+        border-bottom: 1px solid var(--color);
+        width: 60%;
+        outline: none;
+        background-color: var(--background);
+    }
+}

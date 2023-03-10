@@ -1,0 +1,368 @@
+.home__details {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    color: var(--color);
+    overflow: hidden;
+}
+
+.stones {
+    position: absolute;
+    top:5rem;
+    left:2rem;
+    width: 100px;
+    height: 100px;
+}
+
+.stones__bottom {
+    position: absolute;
+    bottom:1.5rem;
+    right:-1.5rem;
+    width: 100px;
+    height: 100px;
+}
+.home__text {
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.home__text h1 {
+    font-size: 4rem;
+    
+}
+
+.search {
+    position: relative;
+    max-width: 100%;
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+    .search input {
+        padding: 0.5rem;
+        border: 1px solid var(--btn-color);
+        height: 45px;
+        max-width: 300px;
+        outline: none;
+    }
+
+    .search__icon {
+        position: absolute;
+        top: 5px;
+        left: 320px;
+        padding: 0.5rem;
+        color: var(--color);
+        font-size: 1.2rem;
+    }
+
+    .search .explore__btn {
+        width: 150px;
+        transition: all 0.5s;
+        height: 48px;
+    }
+
+    .search button:hover {
+        transform: scale(1.03);
+    }
+.home__img {
+    position: relative;
+   width: 500px; 
+   height: 500px;
+   background-color: #fff5e9;
+   border-radius: 50%;
+   display: flex;
+    align-items: center;
+   justify-content: flex-start;
+   margin-top: 2rem;
+
+}
+.home__food {
+    position: relative;
+    padding: 10px;
+    left: -30px;
+    top:-25px;
+    transition: all 2s ease;
+}
+
+
+.home__plant {
+    position: absolute;
+    top: -28px;
+    right: 30%;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+.circle {
+position: absolute;
+width: 430px;
+height: 400px;
+border: 1px solid var(--line);
+border-radius: 50%;
+left: 5%;
+z-index: 1;
+}
+
+.circle__inner {
+    position: absolute;
+    width: 380px;
+    height: 350px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    left: 6%;
+    }
+
+.food__category {
+    position: absolute;
+    left: 86%;
+    z-index: 3;
+
+}
+
+
+    .food__names {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #fff;
+        height: 43px;
+        gap: -2rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        padding: 5px;
+        transition: transform 0.3s ease-in-out;
+    
+    }
+
+    .food__names:hover {
+        transform: scale(1.1);
+    }
+.category__img {
+    border-radius: 50%;
+    margin-left: -2rem;
+}
+    .food__names h2 {
+  font-size: 1rem;
+  margin-left: -2rem;
+    }
+
+    .food__names:nth-child(2) {
+        margin-left: -0.5rem;
+    }
+    .food__names:nth-child(3) {
+        margin-left: -1.2rem;
+    }
+
+    .food__names:nth-child(4) {
+        margin-left: -1rem;
+    }
+    @media screen and (max-width:960px){
+        .home__details {
+    flex-direction: column;
+    justify-content: center;
+        }
+
+       .stone__image {
+        display: block;
+       }
+        .home__text {
+            margin-left: 0;
+        
+            text-align: center;
+        }
+
+        .search__icon {
+            position: absolute;
+            left:330px;
+            
+            font-size: 1.2rem;
+        }
+
+        .home__text h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .home__text h1 {
+            font-size: 2.5rem;
+            margin-top: 0.5rem;
+            
+        }
+        
+
+        .stone__image {
+            display: block;
+        }
+
+        .search {
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+            .search input {
+              display: block;
+                padding: 0.5rem;
+                border: 1px solid var(--btn-color);
+                height: 45px;
+                width: 300px;
+                outline: none;
+                margin: auto;
+            }
+        
+            .search__icon {
+                position: absolute;
+                top: 82px;
+                left:300px;
+                padding: 0.5rem;
+                color: var(--color);
+                font-size: 1.2rem;
+            }
+        
+
+        .search button {
+            width: 120px;
+            transition: all 0.5s;
+            height: 35px;
+        }
+    
+        .search button:hover {
+            width: 150px;
+            height: 40px;
+        }
+        .home__img {
+    position: relative;
+   width: 300px; 
+   height: 300px;
+   background-color: #fff5e9;
+   border-radius: 50%;
+   display: flex;
+    align-items: center;
+   justify-content: flex-start;
+
+}
+.home__food {
+    position: relative;
+    padding: 10px;
+    left: -42px;
+    top:-25px;
+    width: 230px;
+    height: 280px;
+    
+}
+
+
+.home__plant {
+    position: absolute;
+    top: -28px;
+    right: 30%;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+.circle {
+position: absolute;
+width: 250px;
+height: 250px;
+border: 1px solid var(--line);
+border-radius: 50%;
+left: 5%;z-index: 1;
+}
+
+.circle__inner {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    left: 6%;
+    }
+
+    .food__category {
+        position: absolute;
+        left: 70%;
+        z-index: 3;
+    
+    }
+
+    
+    }  
+
+    @media screen and (max-width:375px) {
+
+        .stone__image {
+            display: none;
+        }
+.search input {
+    width: 250px;
+    margin-top: -1rem;
+}
+        .search__icon {
+            position: absolute;
+            top: 68px;
+            left:250px;
+            padding: 0.5rem;
+            color: var(--color);
+            font-size: 1.2rem;
+        }
+        .home__img {
+    position: relative;
+   width: 250px; 
+   height: 250px;
+   margin-top: 1rem;
+
+}
+.home__food {
+    
+    left: -42px;
+    top:-20px;
+    width: 200px;
+    height: 250px;
+    
+}
+
+
+.home__plant {
+    position: absolute;
+    top: -28px;   
+}
+.circle {
+position: absolute;
+width: 200px;
+height: 200px;
+
+}
+
+.circle__inner {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    
+    }
+
+    .food__category {
+        position: absolute;
+        left: 70%;
+        top: -2%;
+        z-index: 3;
+    
+    }
+.food__names {
+    height: 35px;
+    
+}
+    .food__names h2 {
+        font-size: 0.8rem;
+        margin-left: -2rem;
+          }
+.home__plant {
+    top: -3.5rem;
+}
+          .category__img {
+            width: 30px;
+            height: 30px;
+          }
+    
+    }  
+    

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200;9..144,300;9..144,400;9..144,500;9..144,600&family=Montserrat:wght@200;300;400&family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@100;300;400&family=Sofia+Sans:wght@200&display=swap');
+
+:root {
+    --background: #fffcf7;
+    --primary:#6c4b3f;
+    --color:hsl(225, 4%, 20%);
+    --btn-color:#f2bc57;
+    --font:'Open Sans', sans-serif;
+    --line:#e2dbd3;
+    --transition:all 0.5s ease-in-out
+}
+body {
+    font-family: var(--font);
+    background-color:var(--background);
+    color: var(--primary);
+   /* display: flex;
+    align-items: center;
+    justify-content: center;*/
+    
+}
+
+h1 {
+    font-family:  'Fraunces', serif;
+    font-weight: 900;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+   
+    border:none;
+    padding: 10px;
+    border-radius: 0.8rem;
+    font-family: var(--font);
+    background-color: var(--btn-color);
+    color: var(--primary);
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 50px;
+
+    
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+.container{
+    max-width: 1300px;
+}
+
+.slick-list {
+    margin: 0 -5px;
+    overflow: hidden;
+    
+}
+
+/* This is a classname from slick to add margin to the slides*/
+ .slick-slide > div{
+    margin: 0 5px;
+    padding: 0 0.8rem;
+    /*overflow: hidden;*/
+}
+.wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.circle__container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin:10% 50px ;
+    overflow: hidden;
+    
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+ .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ .circle1 {
+    
+    height: 0%;
+    width: 0%;
+    left: 25%;
+    top : -7%;
+    /*clip-path: polygon(0% 100%,100% 0%,100% 100%);**/
+    position: absolute;
+    border-bottom: 120px solid #ffeae5;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    
+    transform: rotate(60deg);
+    display: block;
+ }
+ .circle2 {
+    /*background-color: #f2bc57;
+    height: 30%;
+    width: 30%;
+    clip-path: polygon(0% 100%,100% 0%,100% 100%);*/
+    height: 0%;
+    width: 0%;
+    left: -12%;
+    top : 52%;
+    /*clip-path: polygon(0% 100%,100% 0%,100% 100%);**/
+    position: absolute;
+    border-bottom: 130px solid #ffeae5;
+    border-left: 70px solid transparent;
+    border-right: 85px solid transparent;
+    
+    transform: rotate(-55deg);
+
+ }
+
+ .circle3 {
+   /* background-color: #f2bc57;
+    height: 30%;
+    width: 30%;
+   
+    clip-path: polygon(0% 100%,100% 0%,100% 100%);*/
+
+    height: 0%;
+    width: 0%;
+    left: -10%;
+    top : 8%;
+    /*clip-path: polygon(0% 100%,100% 0%,100% 100%);**/
+    position: absolute;
+    border-bottom: 130px solid #ffeae5;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    
+    transform: rotate(-10deg);
+
+ }
+ .circle4 {
+
+    height: 0%;
+    width: 0%;
+    right: -2%;
+    top:10%;
+    position: absolute;
+    position: absolute;
+    border-bottom: 130px solid #ffeae5;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    
+    transform: rotate(-120deg);
+    /*clip-path: polygon(0% 100%,100% 0%,100% 100%);*/
+    
+ }
+ .circle5 {
+    
+    height: 0%;
+    width: 0%;
+    right: -5%;
+    bottom:20%;
+    position: absolute;
+    border-bottom: 120px solid #ffeae5;
+    border-left: 70px solid transparent;
+    border-right: 85px solid transparent;
+    transform: rotate(-65deg);
+    /*clip-path: polygon(0% 100%,100% 0%,100% 100%);*/
+    
+ }
+
+ .circle6 {
+    
+    height: 0%;
+    width: 0%;
+    right: 23%;
+    bottom: -2%;
+    
+    position: absolute;
+    /*clip-path: polygon(0% 100%,100% 0%,100% 100%);*/
+    border-bottom: 120px solid #ffeae5;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    
+    transform: rotate(-5deg);
+ }
+
+ .food__circle {
+    position: absolute;
+    top:43%;
+    left:57%;
+    transform: translate(-50%,-50%);
+    
+ }
+ table,thead,tbody{
+    width: 100%;
+    border-spacing: 10px;
+    text-align: center;
+  }
+
+  li.active {
+    color: #f2bc57;
+  }
+ @media screen and (max-width:500px) {
+
+    .wrapper {
+        margin-left: 1rem;
+    }
+    .circle__container {
+        position: relative;
+        width: 330px;
+        height: 330px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin:10% 40px ;
+        overflow: hidden;
+        
+        animation: rotate 10s linear infinite;
+    }
+    
+ }
+
+
+
+ 
+
+

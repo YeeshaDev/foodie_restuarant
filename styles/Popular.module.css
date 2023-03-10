@@ -1,0 +1,106 @@
+.popular__heading {
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 95%;
+padding: 0.5rem 1rem;
+}
+
+/*.food__wrapper  {
+    
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+}*/
+
+.food__details {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0.7rem;
+    max-width: 90%;
+    overflow: hidden;
+    
+    
+}
+
+
+.food__details p {
+    color: #555656;
+}
+
+.food__details h2 {
+    color: #555656;
+    margin-top: 0.7rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.popular__img {
+    display: block;
+    margin: auto;
+    object-fit:cover;
+    
+}
+.cart__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:0 1.5rem;
+   
+    font-weight: 900;
+    width: 100%;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:0 2rem;
+    margin:-1.5rem 1rem;
+    font-weight: 900;
+}
+
+.arrows  span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--btn-color);
+    border-radius: 50%;
+    transition: all 0.5s;
+    color: var(--color);
+    cursor: pointer;
+}
+
+.arrows span:hover {
+    transform: scale(1.05);
+    }
+  
+    @media screen and (max-width:500px) {
+        .popular__heading h1 {
+            font-size: 1.1rem;
+        }
+
+        
+
+        .arrows {
+            gap: 0.8rem;
+        }
+        .arrows span {
+            font-size: 0.9rem;
+        }
+        .cart__btn {
+          width: 100%;
+            
+        }
+
+        .cart__btn h3 {
+            font-size: 1rem;
+        }
+    }
+
+
+
