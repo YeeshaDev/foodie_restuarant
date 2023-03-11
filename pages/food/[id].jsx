@@ -15,17 +15,17 @@ const foodDetails = () => {
     const dispatch = useDispatch();
 
 
-    const details = food.find((item) => item.id == id)
-    console.log(details?.price)
+    const Details = food.find((item) => item.id == id)
+    //console.log(details?.price)
      
-    const recommendedFoods = food.filter((item) => item.category === details?.category)
+    const recommendedFoods = food.filter((item) => item.category === Details?.category)
     
   const addCart = () => {
     dispatch(addToCart({
-      id: details.id,
-      foodName: details.foodName,
-      price: details.price,
-      image: details.image,
+      id: Details.id,
+      foodName: Details.foodName,
+      price: Details.price,
+      image: Details.image,
       
     })
 
@@ -52,7 +52,7 @@ const foodDetails = () => {
             <div className={styles.details__header}>
                 <Link href='/'><span title='home'><FaHome/></span></Link>
                 <Link href='/menu'><span title='blog'><FaAngleDoubleLeft/></span></Link>
-                <span>{details?.foodName}</span>
+                <span>{Details?.foodName}</span>
                 
             </div>
             <div className={styles.meal__heading}>
@@ -62,15 +62,15 @@ const foodDetails = () => {
             <div className={styles.upper__details}>
             
             <div className={styles.food__img}>
-                <img src={details?.image}
+                <img src={Details?.image}
                 alt=''/>
             </div>
             <div className={styles.food__details}>
                 
-           <h2>{details?.foodName}</h2>
+           <h2>{Details?.foodName}</h2>
            <hr/>
-           <p>{details?.Desc}</p>
-           <h3>Price: ${details?.price}</h3>
+           <p>{Details?.Desc}</p>
+           <h3>Price: ${Details?.price}</h3>
            <button onClick={addCart}>Add to cart</button>
            </div>
            </div>

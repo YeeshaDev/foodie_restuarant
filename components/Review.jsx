@@ -97,7 +97,7 @@ const Review = () => {
               {review.map((item) => {
                 return (
                   <div key={item.id} className={styles.review__details}>
-                    <p>"{item.review}".</p>
+                    <p>&quot;{item.review}.&quot;</p>
                     <Image src={item.image} alt=''
                     width={50}
                     height={50} 
