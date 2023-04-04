@@ -219,6 +219,96 @@ justify-content: center;
   li.active {
     color: #f2bc57;
   }
+
+  .map-container {
+    height: 400px;
+    }
+     
+  .sidebar {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+    }
+
+    /* MAP HERE */
+
+    .autocomplete-input {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 28%;
+        transform: translateX(28%);
+        z-index: 1;
+        background: white;
+        padding: 13px 13px 13px 20px;
+        border-radius: 5px;
+        width: 240px;
+    }
+    
+    .react-geocoder-results div {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .react-geocoder input {
+        background: none;
+        font-size: 15px;
+        outline: none;
+        border: none;
+        padding-left: 10px;
+    }
+    
+    .iconify--bx {
+        margin-top: 2px;
+    }
+    
+    .select-location-btn {
+        position: absolute;
+        top: 53px;
+        left: 48%;
+        transform: translateX(48%);
+        z-index: 1;
+    }
+    
+    .select-location-btn button {
+        padding: 10px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .select-btn {
+        margin-bottom: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 38%;
+        transform: translateX(38%);
+        z-index: 1;
+    }
+    
+    .select-btn button {
+        padding: 15px;
+        font-size: 15px;
+        width: 250px;
+        border: 1px solid #0fc90f;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .not-ready {
+        color: #0fc90f;
+    }
+    
+    .ready {
+        color: #fff;
+        background-color: #0fc90f;
+    }
  @media screen and (max-width:500px) {
 
     .wrapper {

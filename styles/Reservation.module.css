@@ -24,6 +24,8 @@
     margin-top: 2rem;
     margin-left: 2rem;
 }
+
+
 @media screen and (max-width:960px) {
     .reservations {
         display: flex;
@@ -44,6 +46,9 @@
         margin:2rem auto;
         padding-left: 1rem;
     }
+
+    
+    
 }
 
 @media screen and (max-width:600px){
@@ -52,5 +57,7 @@
         line-height: 1.5;
         font-size: 1.5rem;
     }
+
+    
     
 }

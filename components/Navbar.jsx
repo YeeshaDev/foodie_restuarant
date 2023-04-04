@@ -4,7 +4,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import {useSelector} from 'react-redux'
-import {FaShoppingBasket, FaShoppingCart,FaEquals, FaTimes} from 'react-icons/fa'
+import {FaShoppingBasket,FaEquals, FaTimes} from 'react-icons/fa'
+
 
 const Navbar = () => {
 
@@ -76,7 +77,9 @@ const Navbar = () => {
                 <FaShoppingBasket className={styles.desktop__basket}/>
                 <p className={styles.quantity}>{totalQuantity}</p>
               </span>
-              <button>Sign Up</button>
+              <Link href='/reservation'>
+              <button>Reservation</button>
+              </Link>
             </div>
             </ul>
             

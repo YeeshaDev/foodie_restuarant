@@ -96,6 +96,49 @@
     margin: 1.5rem auto;
 }
 
+.bg__overlay {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 95vw;
+    height: 400px; 
+}
+
+.bg__img{
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg__overlay::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.overlay__text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.overlay__text h1 {
+    font-size: 4rem;
+}
+
+.overlay__text p {
+    font-size: 1rem;
+    line-height: 2;
+    
+}
 
 
 @media screen and (max-width:960px) {
@@ -125,6 +168,14 @@
     width: 95%;
     
 } 
+
+.overlay__text h1 {
+    font-size: 300%;
+    white-space: nowrap;
+}
+.overlay__text p {
+    font-size: 0.8rem;
+}
 }
 /*@media screen and (max-width:600px) {
    
@@ -155,9 +206,38 @@
     }
 }*/
 
+@media screen and (max-width:600px) {
+    .overlay__text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+    }
+    .overlay__text h1 {
+        font-size: 250%;
+        white-space: nowrap;
+    }
+    .overlay__text p {
+        font-size: 1rem;
+    } 
+}
 @media screen and (max-width:350px) {
     .email__info,.phone__info {
         width: 250px;
         
     }
+
+    .overlay__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+    }
+    .overlay__text h1 {
+        font-size: 200%;
+        white-space: nowrap;
+    }
+  
 }

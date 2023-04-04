@@ -4,6 +4,7 @@ import store from "../redux/store";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { Provider } from "react-redux";
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 function MyApp({ Component, pageProps }) {
   return (
