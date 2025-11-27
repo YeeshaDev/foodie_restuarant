@@ -14,10 +14,8 @@ const foodDetails = () => {
     const {id} = router.query
     const dispatch = useDispatch();
 
-
     const Details = food.find((item) => item.id == id)
-    //console.log(details?.price)
-     
+    
     const recommendedFoods = food.filter((item) => item.category === Details?.category)
     
   const addCart = () => {
@@ -30,8 +28,6 @@ const foodDetails = () => {
     })
 
     )
-    // console.log(items.id)
-    //toast.success('Added Succesfully')
 
   }
     return (
